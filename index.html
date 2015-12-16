@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html manifest="manifest.mf" lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >	
+	<link rel="stylesheet" type="text/css" href="css/appfutbol.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />		
+	
+	<title>Futbol App PG con parse DM</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, user-scalable=no"/>	
+	
+	<link rel="shortcut icon" sizes="36x36" href="imagenes/ic_launcher_logocabecera36.png"/>
+	<link rel="shortcut icon" sizes="48x48" href="imagenes/ic_launcher_logocabecera48.png"/>	
+	<link rel="shortcut icon" sizes="72x72" href="imagenes/ic_launcher_logocabecera72.png"/>
+	<link rel="shortcut icon" sizes="96x96" href="imagenes/ic_launcher_logocabecera96.png"/>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="imagenes/apple-touch-icon-57x57-precomposed.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="imagenes/apple-touch-icon-72x72-precomposed.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="imagenes/apple-touch-icon-114x114-precomposed.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="imagenes/apple-touch-icon-144x144-precomposed.png"/>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="mobile-web-app-capable" content="yes"/>
+</head>
+
+<body>
+
+<div id="pages">
+<!--	********************   index ******************
+-->
+  <div class="container current" id="index">
+	<header>
+		  <div class="row">  
+              <div class="col-xs-3">		  
+					<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+				</div>
+				<h2 class="col-xs-9">Liga de Fútbol</h2>
+		  </div>
+	</header>
+	
+	<section>	
+		  <div class="row">
+              <div class="col-xs-4 boton_opciones_home">
+					<a href="#equipos"  class="btn btn-info btn-lg btn-block active">Equipos</a>
+              </div>
+              <div class="col-xs-5 boton_opciones_home">
+					<img class="img-responsive" src="imagenes/home-equipos.png" alt="" title="" />
+              </div>			  	  			  
+		  </div>
+
+		  <div class="row">
+              <div class="col-xs-3 col-xs-offset-4 boton_opciones_home">
+					<img class="img-responsive" src="imagenes/home-camposdefutbol.png" alt="" title="" />					  
+              </div>		  
+              <div class="col-xs-4 boton_opciones_home">
+					<a href="#camposdefutbol"  class="btn btn-info btn-lg btn-block active">Campos de futbol</a>
+              </div>		  
+		  </div>
+
+		  <div class="row">	  
+              <div class="col-xs-4 boton_opciones_home">
+					<a href="#partidos"  class="btn btn-info btn-lg btn-block active">Calendario</a>
+              </div>
+              <div class="col-xs-5 boton_opciones_home">
+					<img class="img-responsive" src="imagenes/home-calendario.png" alt="" title="" />					  
+              </div>			  		
+		  </div>
+	</section>
+	
+	  <footer>
+		  <div class="row"> 
+              <div class="col-xs-9 col-xs-offset-3">
+					<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+              </div>			  
+		  </div>
+	  </footer>		  
+	</div> <!-- /container -->
+
+	
+<!--	********************   equipos **************
+-->
+  <div class="container" id="equipos">
+  	<header>
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="#index">
+						<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+					</a>
+				</div>
+				<h2 class="col-xs-9">Equipos</h2>
+		  </div>
+	</header>	
+	
+	<section>
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/escudo01.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#equipo02" class="btn btn-link">Arsenal Boys</a>			  
+              </div>				  			  
+		  </div>	
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/escudo02.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#equipo02" class="btn btn-link">Chelsea Paters</a>			  
+              </div>				  			  
+		  </div>
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/escudo03.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#equipo02" class="btn btn-link">Albion Martinenc</a>			  
+              </div>				  			  
+		  </div>
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/escudo04.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#equipo02" class="btn btn-link">Everton Atletic</a>			  
+              </div>				  			  
+		  </div>
+	</section>
+
+	  <footer>
+		  <div class="row">
+				<div class="col-xs-3 boton_back">				
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/backbutton.png" alt="" title="" />
+					</a>
+				</div>		  		
+              <div class="col-xs-9">
+					<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+              </div>		  			
+		  </div>
+	  </footer>	 	  
+	</div> <!-- /container -->
+
+	
+<!--	********************   equipo02 **************
+-->	
+  <div class="container" id="equipo02">
+  	<header>
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+					</a>
+				</div>
+				<h2 class="col-xs-9">Chelsea Paters</h2>
+		  </div>
+	</header>	
+
+	
+	<section>
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-1">
+					<img class="img-responsive" src="imagenes/escudo02.png" alt="" title="" />
+              </div>
+              <div class="col-xs-7" id="entrenador">
+				Entrenador : Bobby		  
+              </div>			  
+		  </div>	
+		
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/jugador01.png" alt="" title="" />
+              </div>
+              <div class="col-xs-7">
+				Luis, 16 años, portero		  
+              </div>			  
+		  </div>	
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/jugador02.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-7">
+				Juan, 15 años, defensa		  
+              </div>				  			  
+		  </div>
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/jugador03.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-7">
+				Pedro, 16 años, mediocampo		  
+              </div>				  			  
+		  </div>
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/jugador04.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-7">
+				Rafa, 16 años, delantero			  
+              </div>				  			  
+		  </div>
+	</section>
+
+	  <footer>
+		  <div class="row">
+				<div class="col-xs-3 boton_back">				
+					<a href="#equipos" >
+						<img class="img-responsive" src="imagenes/backbutton.png" alt="" title="" />
+					</a>
+				</div>		  		
+              <div class="col-xs-9">
+					<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+              </div>		  			
+		  </div>
+	  </footer>	 	  
+	</div> <!-- /container -->			
+
+	
+<!--	********************   camposdefutbol **************
+-->		
+  <div class="container" id="camposdefutbol">
+  	<header>
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+					</a>
+				</div>
+				<h2 class="col-xs-9">Campos de Fútbol</h2>
+		  </div>
+	</header>	
+	
+	<section>
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/campodefutbol01.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#campodefutbol02" class="btn btn-link" onclick="initGeolocation()">Municipal de Fañabé</a>			  
+              </div>				  			  
+		  </div>	
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/campodefutbol02.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#campodefutbol02" class="btn btn-link" onclick="initGeolocation()">Municipal de Adeje</a>			  
+              </div>				  			  
+		  </div>
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/campodefutbol03.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#campodefutbol02" class="btn btn-link" onclick="initGeolocation()">Fernando Pérez</a>			  
+              </div>				  			  
+		  </div>
+
+		  <div class="row lista">
+              <div class="col-xs-3 col-xs-offset-2">
+					<img class="img-responsive" src="imagenes/campodefutbol04.png" alt="" title="" />
+              </div>			
+              <div class="col-xs-5">
+					<a href="#campodefutbol02" class="btn btn-link" onclick="initGeolocation()">Villa Isabel</a>			  
+              </div>				  			  
+		  </div>
+	</section> 
+
+	  <footer>
+		  <div class="row">
+				<div class="col-xs-3 boton_back">				
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/backbutton.png" alt="" title="" />
+					</a>
+				</div>		  		
+              <div class="col-xs-9">
+					<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+              </div>		  			
+		  </div>
+	  </footer>	 		   
+	</div> <!-- /container -->
+
+	
+<!--	********************   campodefutbol02 **************
+-->	
+  <div class="container" id="campodefutbol02">
+  	<header>
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+					</a>
+				</div>
+				<h2 class="col-xs-6">Municipal Adeje</h2>
+		  </div>		  
+	</header>	
+	
+	<section>
+		  <div class="row lista">
+              <div class="col-xs-5">
+					<img class="img-responsive" src="imagenes/campodefutbol02grande.png" alt="" title="" />
+              </div>	
+              <div class="col-xs-7">
+					<address>
+						Titular: Ayuntamiento Adeje
+						Teléfono : 902 23 45 21
+						Dimensiones : 103 m.x65 m.
+						Capacidad : 300 espect.
+						Dirección : C/Palo largo,21
+					</address>
+              </div>
+			</div>
+
+		  <div class="row lista">
+              <div class="col-xs-11 col-xs-offset-1">
+					<div id ="map">
+					</div>
+              </div>								  			  
+		  </div>		  
+	</section>
+	
+	  <footer>
+		  <div class="row">
+				<div class="col-xs-3 boton_back">				
+					<a href="#camposdefutbol" >
+						<img class="img-responsive" src="imagenes/backbutton.png" alt="" title="" />
+					</a>
+				</div>		  		
+              <div class="col-xs-9">
+					<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+              </div>		  			
+		  </div>
+	  </footer>	  
+	</div> <!-- /container -->
+
+	
+<!--	********************   calendario **************
+-->		
+  <div class="container" id="calendario">
+  	<header>
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+					</a>
+				</div>
+				<h2 class="col-xs-9">Calendario</h2>
+		  </div>
+	</header>	
+	
+	<section>
+			<form action="#partidos">
+			
+			  <br>Equipos:<select name="equipos">
+				<option value="todos">Todos</option>			  
+				<option value="arsenal">Arsenal Boys</option>
+				<option value="chelsea" selected>Chelsea Paters</option>
+				<option value="albion">Albion Martinenc</option>
+				<option value="everton">Everton Atletic</option>
+			  </select>
+			  <br><br>
+			  Campos de Fútbol:<select name="camposdefutbol">
+				<option value="todos">Todos</option>			  
+				<option value="fañabe">Municipal de Fañabé</option>
+				<option value="adeje">Municipal de Adeje</option>
+				<option value="fperez">Fernando Pérez</option>
+				<option value="visabel">Villa Isabel</option>
+			  </select>
+			  <br><br>
+			  Dias de partido:<select name="equipos">
+				<option value="todos">Todos</option>			  
+				<option value="dia01" selected>24 octubre 2015</option>
+				<option value="dia02">31 octubre 2015</option>
+				<option value="dia03">6 noviembre 2015</option>
+				<option value="dia04">13 noviembre 2015</option>
+			  </select>
+			  <br><br>			  
+			  <input type="submit" value="Buscar">
+			</form>			  
+	</section>
+	
+	  <footer>
+		  <div class="row">
+				<div class="col-xs-3 boton_back">				
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/backbutton.png" alt="" title="" />
+					</a>
+				</div>		  		
+              <div class="col-xs-9">
+					<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+              </div>		  			
+		  </div>
+	  </footer>	  
+	</div> <!-- /container -->
+
+	
+<!--	********************   partidos *******************
+-->		
+  <div class="container" id="partidos">
+  	<header>
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="#index" >
+						<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+					</a>
+				</div>
+				<h2 class="col-xs-9">Partidos 17 octubre</h2>
+		  </div>
+	</header>			
+
+	<section>
+		<div class="row lista">
+			  <div class="col-xs-3">
+					<img class="img-responsive escudo_hora_campo" src="imagenes/escudo01.png" alt="" title="" />
+					<a href="#equipo02" class="btn btn-link">Arsenal Boys</a>
+				</div>
+
+			  <div class="col-xs-4 escudo_hora_campo">
+					<span>20:00</span>
+					<a href="#campodefutbol02" class="btn btn-link" onclick="initGeolocation()">Municipal de Adeje</a>
+			  </div>	
+					  
+			  <div class="col-xs-3">
+					<img class="img-responsive escudo_hora_campo" src="imagenes/escudo02.png" alt="" title="" />
+					<a href="#equipo02" class="btn btn-link">Chelsea Paters</a>
+			  </div>
+              <div class="col-xs-2 boton_opciones_home">
+					<a href="#partidomensajes"  onclick="FutbolMensajes.mostrarNotas()" class="btn btn-info btn-lg btn-block active">Mensajes</a>
+              </div>			  
+		  </div>	
+				  
+		  <div class="row lista">
+			  <div class="col-xs-3">
+					<img class="img-responsive escudo_hora_campo" src="imagenes/escudo03.png" alt="" title="" />
+					<a href="#equipo02" class="btn btn-link">Albion Martinenc</a>
+			  </div>
+
+			  <div class="col-xs-4 escudo_hora_campo">
+					<span>20:00</span>
+					<a href="#campodefutbol02" class="btn btn-link" onclick="initGeolocation()">Villa Isabel</a>
+			  </div>	
+					  
+			  <div class="col-xs-3">
+					<img class="img-responsive escudo_hora_campo" src="imagenes/escudo04.png" alt="" title="" />
+					<a href="#equipo02" class="btn btn-link">Everton Atletic</a>
+			  </div>	
+		  </div>			  
+	</section>
+
+	  <footer>
+		  <div class="row">
+				<div class="col-xs-3 boton_back">				
+					<a href="#calendario" >
+						<img class="img-responsive" src="imagenes/backbutton.png" alt="" title="" />
+					</a>
+				</div>		  		
+              <div class="col-xs-9">
+					<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+              </div>		  			
+		  </div>
+	  </footer>	   
+	</div> <!-- /container -->
+
+	
+	
+<!--	********************   partidomensajes *****************
+-->	
+  <div class="container" id="partidomensajes">
+  	<header>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="col-xs-3">
+						<a href="#index" >
+							<img class="img-responsive" src="imagenes/logocabecera.png" alt="" title="" />
+						</a>
+					</div>
+					<h2 class="col-xs-9">Arsenal Chelsea</h2>
+				</div>			
+				<h2 class="col-sm-6 visible-sm">Cronica del partido</h2>
+		  </div>
+	</header>	  
+
+
+	<section>
+		<div class="row">		
+			<div class="col-sm-6">
+				  <div class="row lista">
+					  <div class="col-xs-12">
+							<div id="error-messages"></div>					  
+							<form id="post-form">    
+								  <div>
+									<label for="note">Nota:</label>
+									<input type="text" name="note" id="note">
+								  </div>
+								  <button type="button" onclick="FutbolMensajes.addNotas(this.form)">Post</button>									  
+							</form>					  
+					  </div>	
+					</div>
+					
+				  <div class="row lista">
+					  <div class="col-xs-12">
+							<ul id="paginamensajes">
+							</ul>						  
+					  </div>	
+					</div>			
+			</div>	<!-- / lista de mensajes -->					
+
+			<div class="col-sm-6 visible-sm">
+				  <div class="row lista">
+					  <div class="col-xs-5">
+							Arsenal 7  Chelsea 2
+					  </div>	
+					  <div class="col-xs-7">
+							El Arsenal se consolida como equipo revelación de la temporada. Y Juanito como el mejor, pichichi del campeonato
+					  </div>
+					</div>			
+			</div>	<!-- / cronica del partido -->	
+		</div>		
+	</section>
+
+	  <footer>
+		  <div class="row">
+				<div class="col-sm-6">		  
+					<div class="col-xs-3 boton_back">				
+						<a href="#partidos" >
+							<img class="img-responsive" src="imagenes/backbutton.png" alt="" title="" />
+						</a>
+					</div>		  		
+				  <div class="col-xs-9">
+						<img class="img-responsive" src="imagenes/logopie.png" alt="" title="" />
+				  </div>
+				</div>
+		  </div>
+	  </footer>		  
+	</div> <!-- /container -->
+
+	
+</div>
+	
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>		
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/mustache.min.js"></script>
+	<script type="text/javascript" src="js/parse-1.6.7.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="js/appfutbol.js"></script>
+	
+	
+	<script id="messages-template" type="text/template">
+		{{#.}}
+			<li>{{createdAt}} {{game}} {{sender}} {{text}}</li>
+		{{/.}}
+	</script>
+
+	<script type="text/javascript">
+            app.initialize();
+    </script>	
+</body>
+
+</html>

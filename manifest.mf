@@ -1,0 +1,37 @@
+CACHE MANIFEST
+# Version 0.1
+index.html
+/css/appfutbol.css
+/css/bootstrap.min.css
+/js/appfutbol.js
+/js/jquery-1.11.3.min.js
+/js/mustache.min.js
+/js/parse-1.6.7.min.js
+/imagenes/apple-touch-icon-57x57-precomposed.png
+/imagenes/apple-touch-icon-72x72-precomposed.png
+/imagenes/apple-touch-icon-114x114-precomposed.png
+/imagenes/apple-touch-icon-144x144-precomposed.png
+/imagenes/backbutton.png
+/imagenes/campodefutbol01.png
+/imagenes/campodefutbol02.png
+/imagenes/campodefutbol02grande.png
+/imagenes/campodefutbol02-llegar.png
+/imagenes/campodefutbol03.png
+/imagenes/campodefutbol04.png
+/imagenes/escudo01.png
+/imagenes/escudo02.png
+/imagenes/escudo03.png
+/imagenes/escudo04.png
+/imagenes/home-calendario.png
+/imagenes/home-camposdefutbol.png
+/imagenes/home-equipos.png
+/imagenes/ic_launcher_logocabecera36.png
+/imagenes/ic_launcher_logocabecera48.png
+/imagenes/ic_launcher_logocabecera72.png
+/imagenes/ic_launcher_logocabecera96.png
+/imagenes/jugador01.png
+/imagenes/jugador02.png
+/imagenes/jugador03.png
+/imagenes/jugador04.png
+/imagenes/logocabecera.png
+/imagenes/logopie.png
